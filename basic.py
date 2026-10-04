@@ -1,17 +1,17 @@
 # ============================================================== Python DataTypes ==================================================================#
-# customerId = "CUST001"
-# Surname = "Yadav"
-# CreditScore = 750
-# Geography = ["France", "Spain", "Germany"]
-# Gender = ["Male", "Female"]
-# Age = 20
-# Tenure = 6
-# Balance = 2000
-# NumOfProducts = 2
-# HasCrCard = True
-# IsActiveMember = True
-# EstimatedSalary = 9000
-# Exited = False
+customerId = "CUST001"
+Surname = "Yadav"
+CreditScore = 750
+Geography = ["France", "Spain", "Germany"]
+Gender = ["Male", "Female"]
+Age = 20
+Tenure = 6
+Balance = 2000
+NumOfProducts = 2
+HasCrCard = True
+IsActiveMember = True
+EstimatedSalary = 9000
+Exited = False
 
 # # Check data types
 # print(type(customerId))
@@ -96,24 +96,37 @@
 # print(customerIds)
 
 # ============================================================== String Operations ==================================================================#
-surname = "yadav Saini Rathore Sharma"
-print(surname.upper())
-print(surname.isupper())
-print(surname.capitalize())
-print(surname.find("yadav"))
-print(surname.isalnum())
-print(surname.replace("Rathore","Jaat"))
-start = surname.startswith("Saini")
-end = surname.endswith("Sharma")
-print(start)
-print(end)
-print("_" .join(surname))
-surname_list = surname.split()
-print(surname_list)
-print(surname_list.count("yadav"))
-print(surname_list.index("yadav"))
 
+# surname = "yadav Saini Rathore Sharma"
+# print(surname.upper())
+# print(surname.isupper())
+# print(surname.capitalize())
+# print(surname.find("yadav"))
+# print(surname.isalnum())
+# print(surname.replace("Rathore","Jaat"))
+# start = surname.startswith("Saini")
+# end = surname.endswith("Sharma")
+# print(start)
+# print(end)
+# print("_" .join(surname))
+# surname_list = surname.split()
+# print(surname_list)
+# print(surname_list.count("yadav"))
+# print(surname_list.index("yadav"))
 
+# ============================================================== Conditional Statements ==================================================================#
+
+IsActiveMember = int(input("Enter the no. of active members:"))
+Balance= int(input("ENter the balance for the member:"))
+if IsActiveMember == 1 :
+    print("Success: The Member is active!")
+    if Balance >= 1000 :
+        print("Success : The Balance is greater than 1000!")
+    else :
+        print("Failure : The Balance is lesser than 1000!")
+else :
+    print("Failure: The Member is Inactive!")
+        
 
 
 
