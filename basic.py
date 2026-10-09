@@ -116,17 +116,36 @@ Exited = False
 
 # ============================================================== Conditional Statements ==================================================================#
 
-IsActiveMember = int(input("Enter the no. of active members:"))
-Balance= int(input("ENter the balance for the member:"))
-if IsActiveMember == 1 :
-    print("Success: The Member is active!")
-    if Balance >= 1000 :
-        print("Success : The Balance is greater than 1000!")
-    else :
-        print("Failure : The Balance is lesser than 1000!")
-else :
-    print("Failure: The Member is Inactive!")
+# IsActiveMember = int(input("Enter the no. of active members:"))
+# Balance= int(input("ENter the balance for the member:"))
+# if IsActiveMember == 1 :
+#     print("Success: The Member is active!")
+#     if Balance >= 1000 :
+#         print("Success : The Balance is greater than 1000!")
+#     else :
+#         print("Failure : The Balance is lesser than 1000!")
+# else :
+#     print("Failure: The Member is Inactive!")
+
+# ============================================================== Python Function logic==================================================================#
+ 
+def engagement_label(balance, is_active):
+    if is_active == False:
+        return "Inactive"
+    elif balance >= 1000:
+        return "High Engagement"
+    elif balance >= 500:
+        return "Medium Engagement"
+    else:
+        return "Low Engagement"
+
+
+print(engagement_label(1500, True))
+print(engagement_label(700, True))
+print(engagement_label(200, True))
+print(engagement_label(1500, False))
         
+
 
 
 
