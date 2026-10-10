@@ -127,34 +127,125 @@ Exited = False
 # else :
 #     print("Failure: The Member is Inactive!")
 
+# ================= Python Functions logic =================
+
+# def engagement_label(balance, is_active):
+#     if is_active == False:
+#         return "Inactive"
+#     elif balance >= 1000:
+#         return "High Engagement"
+#     elif balance >= 500:
+#         return "Medium Engagement"
+#     else:
+#         return "Low Engagement"
+
+
+# print(engagement_label(1500, True))
+# print(engagement_label(700, True))
+# print(engagement_label(200, True))
+# print(engagement_label(1500, False))
+
 # ================= Python Loops =================
 
-def engagement_label(balance, is_active):
-    if is_active == False:
-        return "Inactive"
-    elif balance >= 1000:
-        return "High Engagement"
-    elif balance >= 500:
-        return "Medium Engagement"
-    else:
-        return "Low Engagement"
+# customers = [
+#     ("Rishi", 1000, True),
+#     ("Rahul", 500, False),
+#     ("Priya", 1000, True)
+# ]
+
+# print("\nName\tBalance\tActive/Inactive\tEngagement")
+
+# for name, balance, is_active in customers:
+#     label = engagement_label(balance, is_active)
+#     print(f"{name}\t{balance}\t{is_active}\t\t{label}")
 
 
-print(engagement_label(1500, True))
-print(engagement_label(700, True))
-print(engagement_label(200, True))
-print(engagement_label(1500, False))
+# ================= Python Tuple & Dicionary(Dict inside a Bracket (not considered as inside Tuple because no ',')) =================
 
-# ================= Python Loops =================
 
-customers = [
-    ("Rishi", 1000, True),
-    ("Rahul", 500, False),
-    ("Priya", 1000, True)
-]
+customer_records = (
+    {
+        "CUST001": {
+            "Name": "Rishi",
+            "Balance": 1000
+        },
+        "CUST002": {
+            "Name": "Rahul",
+            "Balance": 5000
+        },
+        "CUST003": {
+            "Name": "Priya",
+            "Balance": 500
+        }
+    }
+)
 
-print("\nName\tBalance\tActive/Inactive\tEngagement")
+print(customer_records["CUST001"]["Balance"])
 
-for name, balance, is_active in customers:
-    label = engagement_label(balance, is_active)
-    print(f"{name}\t{balance}\t{is_active}\t\t{label}")
+
+#================ Python Tuple & Dicionary(Dict inside a Tuple) =================
+records = (
+    {
+        "CustomersDetails": {
+            "CUST001": {
+                "Name": "Rishi",
+                "Balance": 1000
+            },
+            "CUST002": {
+                "Name": "Rahul",
+                "Balance": 5000
+            }
+        },
+
+        "EmployeesDetails": {
+            "EMP001": {
+                "Name": "Aman",
+                "Department": "Data Analytics",
+                "Salary": 20000
+            },
+            "EMP002": {
+                "Name": "Priya",
+                "Department": "HR",
+                "Salary": 25000
+            }
+        }
+    },
+)
+
+# 1. Access customer balance
+print(records[0]["CustomersDetails"]["CUST001"]["Balance"])
+
+# 2. Add a new customer
+records[0]["CustomersDetails"]["CUST003"] = {
+    "Name": "Neha",
+    "Balance": 3000
+}
+
+# 3. Update customer balance
+records[0]["CustomersDetails"]["CUST001"]["Balance"] = 2000
+
+# 4. Add a new employee
+records[0]["EmployeesDetails"]["EMP003"] = {
+    "Name": "Karan",
+    "Department": "IT",
+    "Salary": 30000
+}
+
+# 5. Update employee salary
+records[0]["EmployeesDetails"]["EMP002"]["Salary"] = 28000
+
+# 6. Delete a customer
+del records[0]["CustomersDetails"]["CUST002"]
+
+# 7. Display all customer IDs
+print(records[0]["CustomersDetails"].keys())
+
+# 8. Display all employee records
+print(records[0]["EmployeesDetails"].items())
+
+# 9. Count customers and employees
+print(len(records[0]["CustomersDetails"]))
+print(len(records[0]["EmployeesDetails"]))
+
+
+
