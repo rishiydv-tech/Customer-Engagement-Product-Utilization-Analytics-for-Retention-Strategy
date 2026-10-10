@@ -118,17 +118,17 @@ Exited = False
 
 # IsActiveMember = int(input("Enter the no. of active members:"))
 # Balance= int(input("ENter the balance for the member:"))
-# if IsActiveMember == 1 :
-#     print("Success: The Member is active!")
+# if IsActiveMember == 1 :e!")
 #     if Balance >= 1000 :
+#     print("Success: The Member is activ
 #         print("Success : The Balance is greater than 1000!")
 #     else :
 #         print("Failure : The Balance is lesser than 1000!")
 # else :
 #     print("Failure: The Member is Inactive!")
 
-# ============================================================== Python Function logic==================================================================#
- 
+# ================= Python Loops =================
+
 def engagement_label(balance, is_active):
     if is_active == False:
         return "Inactive"
@@ -144,8 +144,17 @@ print(engagement_label(1500, True))
 print(engagement_label(700, True))
 print(engagement_label(200, True))
 print(engagement_label(1500, False))
-        
 
+# ================= Python Loops =================
 
+customers = [
+    ("Rishi", 1000, True),
+    ("Rahul", 500, False),
+    ("Priya", 1000, True)
+]
 
+print("\nName\tBalance\tActive/Inactive\tEngagement")
 
+for name, balance, is_active in customers:
+    label = engagement_label(balance, is_active)
+    print(f"{name}\t{balance}\t{is_active}\t\t{label}")
