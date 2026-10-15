@@ -60,14 +60,14 @@
 #     if x == "The":
 #         break
 #     print(x)
-d = {"actor":"amir","animal":"cat","earth":2,"list":[23,32,12]}
+# d = {"actor":"amir","animal":"cat","earth":2,"list":[23,32,12]}
 # x= (d.get("actor"))
 # print(x)
 # print(type(x))
-d1 = { 'singer' : 'Kr$na' , 'album': 'Still here', 'genre' : 'hip-hop'}
-d.update(d1)
+# d1 = { 'singer' : 'Kr$na' , 'album': 'Still here', 'genre' : 'hip-hop'}
+# d.update(d1)
 # print(d)
 # print(d.keys())
 # print(d.values())
-for keys, value in d.items():
-    print(keys, "----->", value)
+# for keys, value in d.items():
+#     print(keys, "----->", value)
