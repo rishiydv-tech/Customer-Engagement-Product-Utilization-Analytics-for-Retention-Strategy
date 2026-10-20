@@ -1,0 +1,6 @@
+CustomerId,Surname,Balance(INR),NumOfProducts,HasCrCard,IsActiveMember,CreditScore,Geography,Gender,Age(Years),Tenure(Months),EstimatedSalary,Exited
+1001,Yadav,1000,1,Yes,True,11.1,France,Male,19,2,15000,No
+1002,Sharma,2000,2,No,False,12.6,Spain,Female,18,4,18000,No
+1003,Jaat,5000,6,Yes,False,33.0,Germany,Female,20,5,20000,Yes
+1004,Lawrence,7000,8,Yes,False,65.7,Germany,Male,22,6,5000,Yes
+1005,Goyal,9000,10,Yes,True,22.0,Spain,Female,35,10,10000,Yes
