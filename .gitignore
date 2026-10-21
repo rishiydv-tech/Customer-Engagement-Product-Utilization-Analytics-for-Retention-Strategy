@@ -1,3 +1,10 @@
 #Virtual enviroment
 .venv/
 venv/
+
+#Assignment Files
+Assignment1.py
+
+#Practice Files
+basic.py
+numpy_practice.py

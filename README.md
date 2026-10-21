@@ -23,9 +23,6 @@ The current dataset contains basic customer and banking information, including:
 - **Estimated Salary** – Estimated salary/income of the customer
 - **Exited Status** – Indicates whether the customer has left the bank
 
-
-## Folder Structure
-
 ## Folder Structure
 
 ```text

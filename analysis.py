@@ -18,4 +18,6 @@ data = pd.DataFrame(
     }
 )
 
-data.to_csv("data/raw/customers.csv", index=False)
+print(data)
+
+# data.to_csv("data/raw/customers.csv", index=False)  // used to create a csv file of dataset

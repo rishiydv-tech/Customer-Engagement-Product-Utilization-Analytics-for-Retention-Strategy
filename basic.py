@@ -1,17 +1,17 @@
 # ============================================================== Python DataTypes ==================================================================#
-customerId = "CUST001"
-Surname = "Yadav"
-CreditScore = 750
-Geography = ["France", "Spain", "Germany"]
-Gender = ["Male", "Female"]
-Age = 20
-Tenure = 6
-Balance = 2000
-NumOfProducts = 2
-HasCrCard = True
-IsActiveMember = True
-EstimatedSalary = 9000
-Exited = False
+# customerId = "CUST001"
+# Surname = "Yadav"
+# CreditScore = 750
+# Geography = ["France", "Spain", "Germany"]
+# Gender = ["Male", "Female"]
+# Age = 20
+# Tenure = 6
+# Balance = 2000
+# NumOfProducts = 2
+# HasCrCard = True
+# IsActiveMember = True
+# EstimatedSalary = 9000
+# Exited = False
 
 # # Check data types
 # print(type(customerId))
@@ -163,89 +163,89 @@ Exited = False
 # ================= Python Tuple & Dicionary(Dict inside a Bracket (not considered as inside Tuple because no ',')) =================
 
 
-customer_records = (
-    {
-        "CUST001": {
-            "Name": "Rishi",
-            "Balance": 1000
-        },
-        "CUST002": {
-            "Name": "Rahul",
-            "Balance": 5000
-        },
-        "CUST003": {
-            "Name": "Priya",
-            "Balance": 500
-        }
-    }
-)
+# customer_records = (
+#     {
+#         "CUST001": {
+#             "Name": "Rishi",
+#             "Balance": 1000
+#         },
+#         "CUST002": {
+#             "Name": "Rahul",
+#             "Balance": 5000
+#         },
+#         "CUST003": {
+#             "Name": "Priya",
+#             "Balance": 500
+#         }
+#     }
+# )
 
-print(customer_records["CUST001"]["Balance"])
+# print(customer_records["CUST001"]["Balance"])
 
 
-#================ Python Tuple & Dicionary(Dict inside a Tuple) =================
-records = (
-    {
-        "CustomersDetails": {
-            "CUST001": {
-                "Name": "Rishi",
-                "Balance": 1000
-            },
-            "CUST002": {
-                "Name": "Rahul",
-                "Balance": 5000
-            }
-        },
+# #================ Python Tuple & Dicionary(Dict inside a Tuple) =================
+# records = (
+#     {
+#         "CustomersDetails": {
+#             "CUST001": {
+#                 "Name": "Rishi",
+#                 "Balance": 1000
+#             },
+#             "CUST002": {
+#                 "Name": "Rahul",
+#                 "Balance": 5000
+#             }
+#         },
 
-        "EmployeesDetails": {
-            "EMP001": {
-                "Name": "Aman",
-                "Department": "Data Analytics",
-                "Salary": 20000
-            },
-            "EMP002": {
-                "Name": "Priya",
-                "Department": "HR",
-                "Salary": 25000
-            }
-        }
-    },
-)
+#         "EmployeesDetails": {
+#             "EMP001": {
+#                 "Name": "Aman",
+#                 "Department": "Data Analytics",
+#                 "Salary": 20000
+#             },
+#             "EMP002": {
+#                 "Name": "Priya",
+#                 "Department": "HR",
+#                 "Salary": 25000
+#             }
+#         }
+#     },
+# )
 
-# 1. Access customer balance
-print(records[0]["CustomersDetails"]["CUST001"]["Balance"])
+# # 1. Access customer balance
+# print(records[0]["CustomersDetails"]["CUST001"]["Balance"])
 
-# 2. Add a new customer
-records[0]["CustomersDetails"]["CUST003"] = {
-    "Name": "Neha",
-    "Balance": 3000
-}
+# # 2. Add a new customer
+# records[0]["CustomersDetails"]["CUST003"] = {
+#     "Name": "Neha",
+#     "Balance": 3000
+# }
 
-# 3. Update customer balance
-records[0]["CustomersDetails"]["CUST001"]["Balance"] = 2000
+# # 3. Update customer balance
+# records[0]["CustomersDetails"]["CUST001"]["Balance"] = 2000
 
-# 4. Add a new employee
-records[0]["EmployeesDetails"]["EMP003"] = {
-    "Name": "Karan",
-    "Department": "IT",
-    "Salary": 30000
-}
+# # 4. Add a new employee
+# records[0]["EmployeesDetails"]["EMP003"] = {
+#     "Name": "Karan",
+#     "Department": "IT",
+#     "Salary": 30000
+# }
 
-# 5. Update employee salary
-records[0]["EmployeesDetails"]["EMP002"]["Salary"] = 28000
+# # 5. Update employee salary
+# records[0]["EmployeesDetails"]["EMP002"]["Salary"] = 28000
 
-# 6. Delete a customer
-del records[0]["CustomersDetails"]["CUST002"]
+# # 6. Delete a customer
+# del records[0]["CustomersDetails"]["CUST002"]
 
-# 7. Display all customer IDs
-print(records[0]["CustomersDetails"].keys())
+# # 7. Display all customer IDs
+# print(records[0]["CustomersDetails"].keys())
 
-# 8. Display all employee records
-print(records[0]["EmployeesDetails"].items())
+# # 8. Display all employee records
+# print(records[0]["EmployeesDetails"].items())
 
-# 9. Count customers and employees
-print(len(records[0]["CustomersDetails"]))
-print(len(records[0]["EmployeesDetails"]))
+# # 9. Count customers and employees
+# print(len(records[0]["CustomersDetails"]))
+# print(len(records[0]["EmployeesDetails"]))
 
 
 
