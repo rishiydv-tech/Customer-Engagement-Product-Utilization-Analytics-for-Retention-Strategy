@@ -55,3 +55,4 @@ Customer-Engagement-Product-Utilization-Analytics-for-Retention-Strategy/
 | 18 Oct 2026 | Created the customer banking dataset using Pandas DataFrame and configured Pandas |
 | 19 Oct 2026 | Created `data/raw/` and `data/processed/` folders, learned DataFrame-to-CSV workflow, and pushed the raw dataset to GitHub |
 | 20 Oct 2026 | Configured `.gitignore`, added the processed-data folder structure, and worked on project documentation |
+| 21 Oct 2026 | Tested Pandas function inside `pandas_practice.py` like Concatenation, Groupby, Data-Range |
