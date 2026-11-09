@@ -1,6 +1,9 @@
 import kagglehub
 
-# Download latest version
-path = kagglehub.dataset_download("datascikhan/e-commerce-customer-behavior-dataset-2026")
+path = kagglehub.dataset_download(
+    "shrutimechlearn/churn-modelling",
+    output_dir="/home/rishi/projects/Customer-Engagement-Product-Utilization-Analytics-for-Retention-Strategy/data/raw",
+    force_download=True
+)
 
-print("Path to dataset files:", path)
+print("Dataset saved at:", path)

@@ -131,5 +131,3 @@ array= np.array([
     [4,5,6],
     [7,8,9]])
 print(array[2,2])
-
-b

@@ -1,0 +1,1 @@
+from notebooks.table_style import center_table
